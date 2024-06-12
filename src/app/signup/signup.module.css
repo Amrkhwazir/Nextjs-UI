@@ -1,0 +1,152 @@
+.signupContainer{
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    cursor: default;
+}
+
+.signupForm{
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    
+}
+
+.logo{
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.subContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+}
+
+.text{
+    margin-bottom: 20px;
+}
+
+.buttons{
+    min-width: 300px;
+    height: 60px;
+}
+
+.buttons button{
+    min-width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.buttons button:focus{
+    background-color: #42A9F4;
+    border: 1px solid #42A9F4;
+}
+
+.patientButton{
+    border: 2px solid #42A9F4;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.clinicianButton{
+    margin-left: 20px;
+    border: 2px solid  #42A9F4;
+    cursor: pointer;
+
+}
+
+.hrLine{
+    min-width: 320px;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.authbuttons{
+    min-width: 250px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.authbuttons button{
+    min-width: 80px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    background-color: gainsboro;
+    margin-left: 16px;
+    border-radius: 14px;
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+.loginBtn{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.inputsContainer{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    min-width: 280px;
+    margin-top: 10px;
+    
+}
+
+.inputsContainer input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 3px;
+    padding-left: 10px;
+
+}
+
+.inputsContainer input:focus{
+    outline: none;
+}
+
+.arrowLeftImg{
+    position: absolute;
+    right: 12px;
+    bottom: 112px;
+    cursor: pointer;
+}
+
+#hrline{
+margin-top: 50px;
+}
+
+.extraLoginOptions{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.extraLoginImg{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.leftSideBanner{
+    min-width: 30%;
+}

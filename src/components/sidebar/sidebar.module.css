@@ -1,0 +1,9 @@
+.text{
+    margin-top: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.text:active{
+    color: black;
+}
