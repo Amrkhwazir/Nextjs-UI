@@ -148,5 +148,6 @@ margin-top: 50px;
 }
 
 .leftSideBanner{
-    min-width: 30%;
+    max-width: 30%;
+    height: 100vh;
 }
