@@ -1,4 +1,4 @@
-import { Box, Button, Container } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 
@@ -7,61 +7,82 @@ const Moodmeter = () => {
    <Container sx={{backgroundColor: "white", padding: "40px", width: '90%', marginLeft: "90px", display: "flex", justifyContent: "space-around"}}>
     <Box>
         <Box sx={{width: "230px", height: "200px", backgroundColor: "gainsboro", borderRadius: "30px", paddingTop: "30px", textAlign: "center", fontSize: "24px"}}>
-        <h1>Happy</h1>   
+        <Typography variant='h3'>Happy</Typography>   
         <Image src={"/images/happy.png"} width={30} height={30} />   
         </Box>
         <Box sx={{paddingTop: "12px", textAlign: "center"}}>
-        <h3>Current Mood</h3>
+        <Typography variant='h5'>Current Mood</Typography>
         </Box>
     </Box>
     <Box>
-        <Box sx={{width: "500px", backgroundColor: "gainsboro", height: "200px", borderRadius: "30px", paddingTop: "30px", display: 'flex', flexWrap: "wrap"}}>
+        <Box sx={{width: "500px", backgroundColor: "gainsboro", height: "200px", borderRadius: "30px"}}>
             {/* 1 */}
+            <Box sx={{display: "flex", paddingTop: "15px"}}>
             <Container sx={{textAlign: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
-                <p>52</p>
+                <Typography>52</Typography>
             </Box>
-            <p>wed</p>
+            <Typography>wed</Typography>
             </Container>
-            {/* 1 */}
+            {/* 2 */}
             <Container sx={{textAlign: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
-                <p>52</p>
+                <Typography variant='body1'>52</Typography>
             </Box>
-            <p>wed</p>
+            <Typography>wed</Typography>
             </Container>
-            {/* 1 */}
+            {/* 3 */}
             <Container sx={{textAlign: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
-                <p>52</p>
+                <Typography variant='body1'>52</Typography>
             </Box>
-            <p>wed</p>
+            <Typography>wed</Typography>
             </Container>
-            {/* 1 */}
+            {/* 4 */}
             <Container sx={{textAlign: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
-                <p>52</p>
+                <Typography variant='body1'>52</Typography>
             </Box>
-            <p>wed</p>
+            <Typography>wed</Typography>
             </Container>
+            </Box>
+            <Box sx={{display: "flex", paddingTop: "15px"}}>
             <Container sx={{textAlign: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
-                <p>52</p>
+                <Typography>52</Typography>
             </Box>
-            <p>wed</p>
+            <Typography>wed</Typography>
             </Container>
+            {/* 2 */}
             <Container sx={{textAlign: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
-                <p>52</p>
+                <Typography variant='body1'>52</Typography>
             </Box>
-            <p>wed</p>
+            <Typography>wed</Typography>
             </Container>
+            {/* 3 */}
+            <Container sx={{textAlign: "center"}}>
+            <Box>
+                <Image src={"/images/sad.png"} width={24} height={24} />
+                <Typography variant='body1'>52</Typography>
+            </Box>
+            <Typography>wed</Typography>
+            </Container>
+            {/* 4 */}
+            <Container sx={{textAlign: "center"}}>
+            <Box>
+                <Image src={"/images/sad.png"} width={24} height={24} />
+                <Typography variant='body1'>52</Typography>
+            </Box>
+            <Typography>wed</Typography>
+            </Container>
+            </Box>
         </Box>
         <Box>
         <h3 style={{marginLeft: "20px", marginTop:"10px"}}>PPG chart</h3>
