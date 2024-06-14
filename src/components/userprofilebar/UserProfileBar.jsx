@@ -7,20 +7,21 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Form from '../settingForm/Form';
+import Moodmeter from '../moodmeter/Moodmeter';
 
 const UserProfileBar = () => {
   const pathname = usePathname()
   console.log(pathname);
   return (
-    <Container sx={{backgroundColor: "white",  borderRadius: "8px", paddingBottom: "50px"}}>
-        <Container sx={{display: "flex", justifyContent: "space-around"}}>
+    <Container sx={{backgroundColor: "white",  borderRadius: "8px",borderBottomLeftRadius: "0px" , borderBottomRightRadius: "0px", paddingBottom: "50px", width: "90%", marginLeft: "90px"}}>
+        <Container sx={{display: "flex", justifyContent: "space-evenly"}}>
         <Box sx={{width: "200px", marginTop: "20px"}}>
           <Link href={"/home"}>
           <Image src={"/images/arrowRight.png"} width={34} height={34} />
           </Link>
           
         </Box>
-        <Box sx={{width: "650px", display: "flex", padding: '10px', paddingTop: "20px"}}>
+        <Box sx={{width: "600px", display: "flex", padding: '10px', paddingTop: "20px"}}>
           <Image src={"/images/singleAvatar.png"} width={150} height={150} />
           <Box sx={{paddingTop: "30px", fontSize: "14px", marginLeft: '10px'}}>
           <p className='userId'>F34</p>
@@ -35,7 +36,7 @@ const UserProfileBar = () => {
           </span>
           </Box>
         </Box>
-        <Box sx={{width: "350px", paddingTop: "30px"}}>
+        <Box sx={{width: "450px", paddingTop: "30px"}}>
           <Container>
             <Link href={"/hrvpage"}>
             <Button  sx={{borderRadius: "15px", backgroundColor: `${pathname === "/hrvpage" ? "#42A9F4" : "whiteSmoke"}`, width: "120px", color:`${pathname === "/hrvpage" ? "white" : "grey"}`}}>HRV</Button>

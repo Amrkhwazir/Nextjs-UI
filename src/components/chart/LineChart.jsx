@@ -7,7 +7,7 @@ const LineChart = () => {
     <Container sx={{display: "flex", justifyContent: "center", paddingTop: "20px"}}>
         <Box>
         <Box>
-            <Image src={"/images/chart2.png"} width={950} height={300} />
+            <Image src={"/images/chart2.png"} width={730} height={250} />
         </Box>
         <Box sx={{display: 'flex', justifyContent: "space-evenly"}}>
         <h3 style={{marginTop:"10px", width: "300px"}}>Heart Rate History</h3>

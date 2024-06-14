@@ -6,10 +6,10 @@ import { Box, Container } from '@mui/material'
 
 const page = () => {
   return (
-    <Box sx={{maxWidth: "100%",  display: "flex", backgroundColor: "whitesmoke"}}>
+    <Box sx={{display: "flex", backgroundColor: "whitesmoke", minHeight: "100vh"}}>
       <Sidebar />
-      <Container sx={{marginLeft: "200px"}}>
-      <Topbar />
+      <Container sx={{marginLeft: '120px', width: "90%", minHeight: "100vh", backgroundColor: "whitesmoke" }}>
+      <Topbar  />
       <UserProfileBar />
       </Container>
     </Box>

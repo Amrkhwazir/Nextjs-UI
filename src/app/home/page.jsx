@@ -8,7 +8,7 @@ const Homepage = () => {
   return (
     <Box sx={{backgroundColor: "whitesmoke", display: "flex", height: "100vh"}}>
       <Sidebar />
-      <Container sx={{marginLeft: "200px"}}>
+      <Container sx={{marginLeft: "200px", width: "100%",}}>
       <Topbar />
       <Table />
       </Container>

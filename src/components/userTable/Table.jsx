@@ -7,10 +7,10 @@ import * as React from 'react';
 
 const columns = [
   { field: 'id', headerName: 'UserId', width: 100 },
-  { field: 'name', headerName: 'Name', width: 180 },
-  { field: 'HRV', headerName: 'HRV', width: 180 },
-  { field: 'steps', headerName: 'Steps', width: 180 },
-  { field: 'mood', headerName: 'Mood', width: 180 },
+  { field: 'name', headerName: 'Name', width: 140 },
+  { field: 'HRV', headerName: 'HRV', width: 140 },
+  { field: 'steps', headerName: 'Steps', width: 140 },
+  { field: 'mood', headerName: 'Mood', width: 140 },
   { field: 'riskLevel', headerName: 'Risk Level', width: 100 },
   { field: 'img', headerName: '', width: 150, renderCell: (params)=>{
     // console.log(params.row.avatar)
@@ -36,7 +36,7 @@ const rows = [
 
 export default function DataTable() {
   return (
-    <div style={{ height: 500, width: '100%', backgroundColor: "white" }}>
+    <div style={{ height: 490, width: '100%', backgroundColor: "white" }}>
       <DataGrid
         rows={rows}
         columns={columns}
