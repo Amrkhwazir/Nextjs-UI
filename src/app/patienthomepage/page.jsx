@@ -19,7 +19,7 @@ import { Box, Typography } from '@mui/material'
               <Box>
                 <Typography variant='body'>Hi</Typography>
                 <Typography variant='h4' sx={{fontSize: {
-                    xs: "16px",
+                    xs: "20px",
                     sm: "24px",
                     md: "32px",
                     lg: "32px",
@@ -38,7 +38,7 @@ import { Box, Typography } from '@mui/material'
                 xl: "50%"
             }, height: "100%" , backgroundColor: "white", borderRadius: "20px", display: "flex", flexDirection: "column", justifyContent: "space-around", alignItems: "center"}}>
                 <Typography variant='body'>Live Heart Rate</Typography>
-                <Typography variant='h2' sx={{fontSize: {xs: "24px", sm: "28px", md: "28px", lg: "32px"}}}>89 bpm</Typography>
+                <Typography variant='h2' sx={{fontSize: {xs: "28px", sm: "32px", md: "32px", lg: "36px"}}}>89 bpm</Typography>
                 <Image src={"/images/heart.png"} alt='heart logo' width={120} height={120} />
                 <GraphicEq />
 
