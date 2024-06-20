@@ -177,16 +177,9 @@ margin-top: 50px;
     flex-direction: column;
     align-items: flex-start;
     padding: 80px 20px;
-    border: 1px solid red;
     
 }
 
-.arrowLeftImg{
-    position: absolute;
-    right: 12px;
-    bottom: 300px;
-    cursor: pointer;
-}
 
     .leftSideBanner  .sideLogo{
         display: none;
