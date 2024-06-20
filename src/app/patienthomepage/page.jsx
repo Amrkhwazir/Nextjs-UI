@@ -38,7 +38,7 @@ import { Box, Typography } from '@mui/material'
                 xl: "50%"
             }, height: "100%" , backgroundColor: "white", borderRadius: "20px", display: "flex", flexDirection: "column", justifyContent: "space-around", alignItems: "center"}}>
                 <Typography variant='body'>Live Heart Rate</Typography>
-                <Typography variant='h2'>89 bpm</Typography>
+                <Typography variant='h2' sx={{fontSize: {xs: "24px", sm: "28px", md: "28px", lg: "32px"}}}>89 bpm</Typography>
                 <Image src={"/images/heart.png"} alt='heart logo' width={120} height={120} />
                 <GraphicEq />
 

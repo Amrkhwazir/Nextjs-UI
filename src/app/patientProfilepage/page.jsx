@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const page = () => {
   return (
-    <Box sx={{width: '100%', height: "100vh", backgroundColor: "whitesmoke", padding: "30px"}}>
+    <Box sx={{width: '100%', height: "100vh", backgroundColor: "whitesmoke", padding: "30px",  overflowY: "scroll"}}>
       <Box sx={{width: '100%', height: "100vh" , backgroundColor: "white", borderRadius: "8px", position: "relative"}}>
         <Box sx={{width: "100%", height: "100px", backgroundColor: "#41A9F4", borderTopLeftRadius: "8px", borderTopRightRadius: "8px",  display: "flex", justifyContent:"space-between", padding: "40px"}}>
            <Link href={"/"}>
