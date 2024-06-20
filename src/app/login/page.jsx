@@ -1,3 +1,4 @@
+"use client"
 import { Typography } from "@mui/material"
 import styles from "./login.module.css"
 import Image from 'next/image'
