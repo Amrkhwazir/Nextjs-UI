@@ -16,7 +16,7 @@ const Login = () => {
             <Image src={"/images/mainlogo.png"} alt='logo' width={80} height={70} />
             </div>
         <div className={styles.subContainer}>
-            <Typography className={styles.text}>Are you a</Typography>
+            <Typography variant="h4" className={styles.text}>Are you a</Typography>
             <div className={styles.buttons}>
                 <button className={styles.patientButton} onClick={() => setClinician(false)}>Patient</button>
                 <button className={styles.clinicianButton} onClick={() => setClinician(true)}>Clinician</button>
