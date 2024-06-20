@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useState } from "react"
 
 
-const login = () => {
+const Login = () => {
     const [isClinician, setClinician] = useState(false)
 
   return (
@@ -59,4 +59,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
