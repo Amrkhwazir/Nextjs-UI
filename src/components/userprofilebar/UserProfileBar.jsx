@@ -7,7 +7,6 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Form from '../settingForm/Form';
-import styles from "./userProfile.module.css"
 
 const UserProfileBar = () => {
   const pathname = usePathname()
