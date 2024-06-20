@@ -8,9 +8,21 @@ import React from 'react'
 
 const page = () => {
   return (
-    <Box sx={{minHeight: "100vh", width: "100%", display: "flex", backgroundColor: "whitesmoke", overflowY: "scroll" }}>
+    <Box sx={{minHeight: "100vh", width: "100%", display: "flex", backgroundColor: "whitesmoke"}}>
       <Sidebar />
-      <Container sx={{marginLeft: '120px',width: "90%", minHeight: "100vh", backgroundColor: "whitesmoke", }}>
+      <Container sx={{marginLeft: {
+        xs: "-80px",
+        sm: "120px",
+        md: "120px",
+        lg: "120px",
+        xl: "120px"
+      }, width: {
+        xs: "105%",
+        sm: "80%",
+        md: "90%",
+        lg: "90%",
+        xl: "100%"
+      }, minHeight: "100vh", backgroundColor: "whitesmoke", }}>
       <Topbar />
       <UserProfileBar />
       <Chart />

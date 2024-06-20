@@ -8,9 +8,9 @@ import * as React from 'react';
 const columns = [
   { field: 'id', headerName: 'UserId', width: 100 },
   { field: 'name', headerName: 'Name', width: 140 },
-  { field: 'HRV', headerName: 'HRV', width: 140 },
-  { field: 'steps', headerName: 'Steps', width: 140 },
-  { field: 'mood', headerName: 'Mood', width: 140 },
+  { field: 'HRV', headerName: 'HRV', width: 130 },
+  { field: 'steps', headerName: 'Steps', width: 120 },
+  { field: 'mood', headerName: 'Mood', width: 150 },
   { field: 'riskLevel', headerName: 'Risk Level', width: 100 },
   { field: 'img', headerName: '', width: 150, renderCell: (params)=>{
     // console.log(params.row.avatar)

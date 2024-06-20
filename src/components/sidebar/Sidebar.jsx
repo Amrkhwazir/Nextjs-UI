@@ -6,7 +6,13 @@ import Link from "next/link"
 
 const Sidebar = () => {
   return (
-    <Container sx={{width: "200px", backgroundColor: "white", paddingTop: "30px", position: "fixed", height: "100vh",}} >
+    <Container sx={{width: "200px", backgroundColor: "white", paddingTop: "30px", position: "fixed", height: "100vh", display : {
+      xs: "none",
+      sm: "block",
+      md: "block",
+      lg: "block",
+      xl: "block"
+    }}} >
       <Box sx={{maxWidth: "200px", height: "200px", textAlign: "center"}}>
       <Image src={"/images/mainlogo.png"} width={80} height={80} />
       <Link href={"/home"}>

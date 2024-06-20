@@ -7,7 +7,13 @@ const Homepage = () => {
   return (
     <Box sx={{backgroundColor: "whitesmoke", display: "flex", height: "100vh"}}>
       <Sidebar />
-      <Container sx={{marginLeft: "200px", width: "100%",}}>
+      <Container sx={{marginLeft: {
+        xs: "0px", 
+        sm: "200px",
+        md: "200px",
+        lg: "200px",
+        xl: "200px",
+      }, width: "100%", height: "100vh", overflowY: "scroll"}}>
       <Topbar />
       <Table />
       </Container>
