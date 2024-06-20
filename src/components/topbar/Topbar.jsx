@@ -1,4 +1,4 @@
-import { Container } from '@mui/material'
+import { Container, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 
@@ -8,7 +8,7 @@ const Topbar = () => {
         <Image src={"/images/searchicon.png"} width={24} height={24} />
         <Image src={"/images/notification.png"} width={24} height={24} />
         <Image src={"/images/useravatar.png"} width={28} height={28} />
-        <span>LoginName</span>
+        <Typography>LoginName</Typography>
     </Container>
   )
 }

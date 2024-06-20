@@ -2,9 +2,12 @@ import { Typography } from "@mui/material"
 import styles from "./login.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from "react"
 
 
 const login = () => {
+    const [isClinician, setClinician] = useState(false)
+
   return (
     <div className={styles.loginContainer}>
         <div className={styles.loginForm}>
@@ -12,16 +15,16 @@ const login = () => {
             <Image src={"/images/mainlogo.png"} width={80} height={70} />
             </div>
         <div className={styles.subContainer}>
-            <h1 className={styles.text}>Are you a</h1>
+            <Typography className={styles.text}>Are you a</Typography>
             <div className={styles.buttons}>
-                <button className={styles.patientButton}>Patient</button>
-                <button className={styles.clinicianButton}>Clinician</button>
+                <button className={styles.patientButton} onClick={() => setClinician(false)}>Patient</button>
+                <button className={styles.clinicianButton} onClick={() => setClinician(true)}>Clinician</button>
             </div>
             <div className={styles.hrLine}></div>
             <form action="">
                 <div className={styles.authbuttons}>
                     <Link href="/">
-                    <p className={styles.loginBtn}>Login</p>
+                    <Typography className={styles.loginBtn}>Login</Typography>
                     </Link>
                     <Link href="/signup">
                     <button className={styles.signupBtn}>Signup</button>
@@ -34,13 +37,13 @@ const login = () => {
                     <input type="text" name='password' id='password' placeholder='password' required />
                     {/* icon mui */}
                 </div>
-                <Link href={"/home"}>
+                <Link href={isClinician == true ? "/home" : "/patientProfilepage"}>
                     <Image className={styles.arrowLeftImg} src={"/images/arrowLeft.png"} width={30} height={30} />
                 </Link>
             </form>
             <div className={styles.hrLine} id={styles.hrline}></div>
             <div className={styles.extraLoginOptions}>
-                <p>Login via</p>
+                <Typography>Login via</Typography>
                 <span className={styles.extraLoginImg}>
                 <Image src="/images/iphone.png" width={20} height={20} />
                 <Image src="/images/google.png" width={20} height={20}/>
@@ -49,7 +52,7 @@ const login = () => {
         </div>
         </div>
         <div className={styles.leftSideBanner}>
-            <Image src="/images/Rectangle 28.png" width={450} height={623}/>
+            <img className={styles.sideLogo} src="/images/Rectangle 28.png" />
         </div>
     </div>
   )

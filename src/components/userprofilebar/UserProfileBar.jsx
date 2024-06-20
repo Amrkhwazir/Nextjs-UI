@@ -1,5 +1,5 @@
 "use client"
-import { Box, Button, Container } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 import Image from 'next/image'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -24,15 +24,15 @@ const UserProfileBar = () => {
         <Box sx={{width: "600px", display: "flex", padding: '10px', paddingTop: "20px"}}>
           <Image src={"/images/singleAvatar.png"} width={150} height={150} />
           <Box sx={{paddingTop: "30px", fontSize: "14px", marginLeft: '10px'}}>
-          <p className='userId'>F34</p>
-          <h1 className='UserName'>ABC DEL</h1>
+          <Typography variant='body' className='userId'>F34</Typography>
+          <Typography variant='h5' className='UserName'>ABC DEL</Typography>
           <span style={{display: "flex"}}>
           <LocationOnIcon sx={{fontSize: "20px"}} />
-          <p className='userCity'>USA</p>
+          <Typography variant='body' className='userCity'>USA</Typography>
           </span>
           <span style={{display: "flex"}}>
           <PhoneIcon sx={{fontSize: "18px"}} />
-          <p className='userPhone'>123 345 789</p>
+          <Typography variant='body' className='userPhone'>123 345 789</Typography>
           </span>
           </Box>
         </Box>
@@ -60,7 +60,7 @@ const UserProfileBar = () => {
         </Box>
         </Container>
         <Container sx={{padding: "20px"}}>
-        {pathname === "/hrvpage" && <h1>HRV Monitoring Page</h1>}
+        {pathname === "/hrvpage" && <Typography variant='h3'>HRV Monitoring Page</Typography>}
         </Container>
        {pathname === "/settings" &&  <Form />}
     </Container>

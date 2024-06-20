@@ -50,7 +50,7 @@ const Signup = () => {
         </div>
         </div>
         <div className={styles.leftSideBanner}>
-            <Image src="/images/Rectangle 28.png" objectFit="contain" objectPosition="right" width={450} height={622} />
+            <img className={styles.sideLogo} src="/images/Rectangle 28.png" />
         </div>
     </div>
   )
