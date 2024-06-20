@@ -13,7 +13,7 @@ const Login = () => {
     <div className={styles.loginContainer}>
         <div className={styles.loginForm}>
             <div className={styles.logo}>
-            <Image src={"/images/mainlogo.png"} width={80} height={70} />
+            <Image src={"/images/mainlogo.png"} alt='logo' width={80} height={70} />
             </div>
         <div className={styles.subContainer}>
             <Typography className={styles.text}>Are you a</Typography>
@@ -39,21 +39,21 @@ const Login = () => {
                     {/* icon mui */}
                 </div>
                 <Link href={isClinician == true ? "/home" : "/patientProfilepage"}>
-                    <Image className={styles.arrowLeftImg} src={"/images/arrowLeft.png"} width={30} height={30} />
+                    <Image className={styles.arrowLeftImg} src={"/images/arrowLeft.png"} alt='go to home page' width={30} height={30} />
                 </Link>
             </form>
             <div className={styles.hrLine} id={styles.hrline}></div>
             <div className={styles.extraLoginOptions}>
                 <Typography>Login via</Typography>
                 <span className={styles.extraLoginImg}>
-                <Image src="/images/iphone.png" width={20} height={20} />
-                <Image src="/images/google.png" width={20} height={20}/>
+                <Image src="/images/iphone.png" alt='iphone' width={20} height={20} />
+                <Image src="/images/google.png" alt='google' width={20} height={20}/>
                 </span>
             </div>
         </div>
         </div>
         <div className={styles.leftSideBanner}>
-            <img className={styles.sideLogo} src="/images/Rectangle 28.png" />
+            <img className={styles.sideLogo} alt='side banner' src="/images/Rectangle 28.png" />
         </div>
     </div>
   )

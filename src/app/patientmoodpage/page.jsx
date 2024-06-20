@@ -11,11 +11,11 @@ import { Box, Typography } from '@mui/material'
             <Box sx={{width: "100%", height: "100px", display: "flex", justifyContent:"space-between", padding: "30px"}}>
           
             <Link href={"/patienthomepage"}>
-            <Image src={"/images/arrowRight.png"} width={30} height={30} style={{cursor: "pointer"}} />
+            <Image src={"/images/arrowRight.png"} alt='back to previous page' width={30} height={30} style={{cursor: "pointer"}} />
            </Link>
              
                <Link href={"/"}>
-                <Image src={"/images/mainLogo.png"} width={80} height={70} style={{cursor: "pointer"}} />
+                <Image src={"/images/mainLogo.png"} alt='logo' width={80} height={70} style={{cursor: "pointer"}} />
                </Link>  
 
                 <MoreVert style={{cursor: "pointer", fontSize: "32px", marginTop: '10px'}} />
@@ -31,7 +31,7 @@ import { Box, Typography } from '@mui/material'
                     xl: "36px"
                 }}}>ABC DEL</Typography>
             </Box>
-              <Image src={"/images/patientimage.png"} width={70} height={70} style={{cursor: "pointer"}} />
+              <Image src={"/images/patientimage.png"} alt='patient image' width={70} height={70} style={{cursor: "pointer"}} />
             </Box>
             <Box sx={{width: "100%", height: "320px", marginTop: "10px", display: "flex", justifyContent: 'space-between', alignItems: "center"}}>
                 <Box sx={{width: '10%', height: "90%" ,backgroundColor: "gainsboro", borderTopRightRadius: "20px", borderBottomRightRadius: "20px"}}></Box>

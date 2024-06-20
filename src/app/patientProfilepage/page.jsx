@@ -13,13 +13,13 @@ const page = () => {
       <Box sx={{width: '100%', height: "100vh" , backgroundColor: "white", borderRadius: "8px", position: "relative"}}>
         <Box sx={{width: "100%", height: "100px", backgroundColor: "#41A9F4", borderTopLeftRadius: "8px", borderTopRightRadius: "8px",  display: "flex", justifyContent:"space-between", padding: "40px"}}>
            <Link href={"/"}>
-            <Image src={"/images/arrowRight.png"} width={30} height={30} style={{cursor: "pointer"}} />
+            <Image src={"/images/arrowRight.png"} alt='go back' width={30} height={30} style={{cursor: "pointer"}} />
            </Link>
            
             <Settings style={{cursor: "pointer", fontSize: "28px"}} />
         </Box>
         <Box>
-          <Image src={"/images/patientimage.png"} width={100} height={100} style={{cursor: "pointer", position: "absolute", right: "100px", top: "50px"}} />
+          <Image src={"/images/patientimage.png"} alt='patient image' width={100} height={100} style={{cursor: "pointer", position: "absolute", right: "100px", top: "50px"}} />
           <AddPhotoAlternateOutlinedIcon style={{position: "absolute", right: "90px"}} />
         </Box>
         <Box sx={{paddingLeft: {
