@@ -19,8 +19,8 @@ const page = () => {
       }, width: {
         xs: "105%",
         sm: "80%",
-        md: "90%",
-        lg: "90%",
+        md: "95%",
+        lg: "92%",
         xl: "100%"
       }, minHeight: "100vh", backgroundColor: "whitesmoke", }}>
       <Topbar />

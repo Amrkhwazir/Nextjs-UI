@@ -8,7 +8,11 @@ const Chart = () => {
   return (
     <Box sx={{backgroundColor: "white", width: "90%", paddingBottom: "30px", marginLeft: "90px"}}>
         {/* heart rate and chart */}
-        <Box sx={{ display: "flex", justifyContent: "space-around"}}>
+        <Box sx={{ display: "flex", justifyContent: "space-around", flexDirection: {
+            xs: "column",
+            sm: "row",
+            md: "row"
+        }, alignItems: {xs: "center"}}}>
             <Box>
         <Box sx={{width: "230px", height: "200px", backgroundColor: "gainsboro", borderRadius: "30px", paddingTop: "30px", textAlign: "center", marginLeft: "0px", marginRight: "0px", fontSize: "24px"}}>
             <h1>89 bpm</h1>
