@@ -9,13 +9,13 @@ const page = () => {
     <Box sx={{display: "flex", backgroundColor: "whitesmoke", minHeight: "100vh"}}>
       <Sidebar />
       <Container sx={{marginLeft: {
-        xs: "-80px", 
+        xs: "-88px", 
         sm: "60px",
         md: "120px",
         lg: "120px",
         xl: "120px",
       }, width: {
-        xs: "105%",
+        xs: "110%",
         sm: "90%",
         md: "95%",
         lg: "92%",
