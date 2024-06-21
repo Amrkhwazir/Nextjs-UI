@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const Sidebar = () => {
   return (
-    <Container sx={{width: "200px", backgroundColor: "white", paddingTop: "30px", position: "fixed", height: "100vh", display : {
+    <Container sx={{width: {xs: "0px", sm: '100px', md: "150px", lg: "200px"}, backgroundColor: "white", paddingTop: "30px", position: "fixed", height: "100vh", display : {
       xs: "none",
       sm: "block",
       md: "block",
