@@ -9,7 +9,19 @@ const page = () => {
   return (
     <Box sx={{backgroundColor: "whitesmoke", display: "flex", minHeight: "100vh", width: "100%",}}>
       <Sidebar />
-      <Container sx={{marginLeft: '120px', width: "90%", minHeight: "100vh", backgroundColor: "whitesmoke",}}>
+      <Container sx={{marginLeft: {
+        xs: "-80px",
+        sm: "65px",
+        md: "120px",
+        lg: "120px",
+        xl: "120px"
+      }, width: {
+        xs: "105%",
+        sm: "90%",
+        md: "95%",
+        lg: "92%",
+        xl: "100%"
+      }, minHeight: "100vh", backgroundColor: "whitesmoke",}}>
       <Topbar />
       <UserProfileBar />
       <Moodmeter />

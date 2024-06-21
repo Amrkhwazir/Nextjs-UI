@@ -42,7 +42,7 @@ export default function DataTable() {
         columns={columns}
         initialState={{
           pagination: {
-            paginationModel: { page: 0, pageSize: 7 },
+            paginationModel: { page: 0, pageSize: 9 },
           },
         }}
         pageSizeOptions={[5, 10]}

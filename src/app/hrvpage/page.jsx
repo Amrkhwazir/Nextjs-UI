@@ -12,17 +12,17 @@ const page = () => {
       <Sidebar />
       <Container sx={{marginLeft: {
         xs: "-80px",
-        sm: "120px",
+        sm: "65px",
         md: "120px",
         lg: "120px",
         xl: "120px"
       }, width: {
         xs: "105%",
-        sm: "80%",
+        sm: "90%",
         md: "95%",
         lg: "92%",
         xl: "100%"
-      }, minHeight: "100vh", backgroundColor: "whitesmoke", }}>
+      }, minHeight: "100vh", backgroundColor: "whitesmoke"}}>
       <Topbar />
       <UserProfileBar />
       <Chart />

@@ -9,7 +9,7 @@ const Homepage = () => {
       <Sidebar />
       <Container sx={{marginLeft: {
         xs: "0px", 
-        sm: "200px",
+        sm: "150px",
         md: "200px",
         lg: "200px",
         xl: "200px",

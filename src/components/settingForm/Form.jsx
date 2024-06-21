@@ -5,10 +5,10 @@ import React from 'react'
 const Form = () => {
   return (
     <Container>
-        <Box sx={{marginTop: "30px"}}>
+        <Box>
             <h1>Settings</h1>
         </Box>
-        <Box sx={{marginTop: "30px"}}>
+        <Box sx={{marginTop: "30px", marginLeft: '-10px'}}>
         <FormControl style={{ border: "1px solid black", padding: "8px", borderRadius: "20px", width: "300px", marginTop: "10px"}}  defaultValue="" required >
     <input style={{backgroundColor: "transparent", border: "none", paddingLeft: "5px"}} placeholder="Name" />
         </FormControl>
