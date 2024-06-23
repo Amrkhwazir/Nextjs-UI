@@ -1,6 +1,5 @@
 
 import Sidebar from "@/components/sidebar/Sidebar"
-import Table from "@/components/userTable/Table"
 import { Box, Container } from "@mui/material"
 import Topbar from "@/components/topbar/Topbar"
 import UserProfilebar from "../../components/userprofilebar/UserProfileBar"

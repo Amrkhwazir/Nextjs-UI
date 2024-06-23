@@ -1,0 +1,78 @@
+.mapImg{
+    width: 800px; 
+    height: 350px; 
+    border-radius: 12px
+}
+
+.vectormap{
+    position: absolute; 
+    width: 300px; 
+    bottom: 0px; 
+    left: 150px;
+}
+
+.ellipse{
+    position: absolute; 
+    width: 50px; 
+    top: 90px; 
+    left: 320px;
+}
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .mapImg{
+        width: 300px; 
+        height: 300px; 
+        border-radius: 12px
+    }
+
+    .vectormap{
+        position: absolute; 
+        width: 200px; 
+        bottom: 0px; 
+        left: 300px;
+        right: 0px;
+    }
+
+    .ellipse{
+        position: absolute; 
+        width: 50px; 
+        top: 120px; 
+        left: 410px;
+    }
+
+} 
+
+@media (min-width: 600px) and (max-width: 900px) {
+    
+    .mapImg{
+        width: 520px; 
+        height: 300px; 
+        border-radius: 12px
+    }
+
+    .vectormap{
+        position: absolute; 
+        width: 200px; 
+        bottom: 0px; 
+        left: 300px;
+        right: 0px;
+    }
+
+    .ellipse{
+        position: absolute; 
+        width: 50px; 
+        top: 120px; 
+        left: 410px;
+    }
+} 
+
+
+@media (min-width: 900px) and (max-width: 1200px) {
+
+} 
+
+
+@media (min-width: 1200px) and (max-width: 1536px) {
+
+} 

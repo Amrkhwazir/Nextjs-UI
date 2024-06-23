@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const page = () => {
   return (
-    <Box sx={{width: '100%', height: "100vh", backgroundColor: "whitesmoke", padding: "30px",overflowY: "scroll"}}>
+    <Box sx={{width: '100%', height: "100vh", backgroundColor: "whitesmoke", padding: "20px",overflowY: "scroll"}}>
       <Box sx={{width: '100%', height: "100vh" , backgroundColor: "white", borderRadius: "8px", position: "relative", overflowY: "scroll"}}>
         <Box sx={{width: "100%", height: "100px", backgroundColor: "#41A9F4", borderTopLeftRadius: "8px", borderTopRightRadius: "8px",  display: "flex", justifyContent:"space-between", padding: "40px"}}>
            <Link href={"/"}>
@@ -27,7 +27,7 @@ const page = () => {
             sm: "40px",
             md: "250px",
         }}}>
-        <Box sx={{marginTop: "30px"}}>
+        <Box sx={{margin: "30px 10px"}}>
             <Typography variant='body'>Hi</Typography>
             <Typography variant='h4'>ABC DEL</Typography>
         </Box>
@@ -74,7 +74,7 @@ const page = () => {
       <WatchIcon style={{position: "absolute",  right: "10px", top: "4px"}}  />
         </FormControl>
         </Box>
-        <Box sx={{marginTop: "10px", paddingTop: "20px"}}>
+        <Box sx={{marginTop: "10px", marginTop: "20px", height: "60px"}}>
             <Link href="/patienthomepage">
           <Button sx={{borderRadius: "15px", paddingLeft: "20px", paddingRight: "20px"}} variant='contained'>Save Details</Button>
             </Link>

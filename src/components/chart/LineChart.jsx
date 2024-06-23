@@ -1,20 +1,21 @@
-import { Box, Button, Container } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
+import styles from "./linechart.module.css"
 
 const LineChart = () => {
   return (
     <Container sx={{display: "flex", justifyContent: "center", paddingTop: "20px"}}>
+        <Box sx={{flexDirection: "column", display: "flex", alignItems: "center"}}>
         <Box>
-        <Box>
-            <Image src={"/images/chart2.png"} width={730} height={250} />
+            <img src={"/images/chart2.png"} className={styles.lineChart} />
         </Box>
-        <Box sx={{display: 'flex', justifyContent: "space-evenly"}}>
-        <h3 style={{marginTop:"10px", width: "300px"}}>Heart Rate History</h3>
-        <Box sx={{marginTop: "10px"}}>
-        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", width: "120px", color: "white", height: "30px" }}>This Week</Button>
-        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", width: "120px", color: "grey", height: "30px" , marginLeft: "10px"}}>This Month</Button>
-        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", width: "120px", color: "grey", height: "30px",  marginLeft: "10px" }}>Today</Button>
+        <Box sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row', md: "row", lg: "row"}, justifyContent: "space-between", marginTop: "10px", width: "100%"}}>
+        <Typography style={{marginTop:"10px", fontWeight: "bold", fontSize: "18px"}}>Heart Rate History</Typography>
+        <Box sx={{marginTop: "10px",  display: "flex", justifyContent: 'center', gap: "10px"}}>
+        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", width:{xs: "90px", sm: "100px", md: "110px", lg: "120px"}, color: "white", height: "30px", fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "16px"} }}>This Week</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", width:{xs: "100px", sm: "110px", md: "110px", lg: "120px"}, color: "grey", height: "30px", fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "16px"} }}>This Month</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", width:{xs: "90px", sm: "100px", md: "110px", lg: "120px"}, color: "grey", height: "30px", fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "16px"} }}>Today</Button>
         </Box>
         </Box>
         </Box>

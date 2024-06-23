@@ -1,0 +1,158 @@
+.lineImg{
+    width: 800px;
+    height: 1px;
+}
+
+.chartImg{
+    width: 750px;
+    height: 250px;
+}
+
+.Line2Img{
+    position: absolute;
+    width: 720px;
+    bottom: 130px;
+    left: 50px;
+}
+
+.vectorImg{
+    position: absolute;
+    width: 650px;
+    bottom: 80px;
+    left: 120px;
+}
+
+.chartValue1{
+    position: absolute; 
+    top: 20px; 
+    left: 20px;
+   list-style-type: none;
+   font-weight: bold;
+}
+.chartValue2{
+    position: absolute; 
+    top: 90px; 
+    left: 20px;
+   list-style-type: none;
+   font-weight: bold;
+}
+.chartValue3{
+    position: absolute; 
+    bottom: 10px;
+    left: 20px;
+   list-style-type: none;
+   font-weight: bold;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+    .lineImg{
+        width: 300px;
+    }
+
+    .chartImg{
+        width: 320px;
+        height: 230px;
+    }
+
+    .Line2Img{
+        position: absolute;
+        width: 280px;
+        height: 2px;
+        bottom: 130px;
+        left: 30px;
+    }
+    
+    .vectorImg{
+        position: absolute;
+        width: 250px;
+        bottom: 112px;
+        left: 60px;
+    }
+
+    .chartValue1{
+        position: absolute; 
+        top: 20px; 
+        left: 10px;
+       list-style-type: none;
+       font-weight: bold;
+       font-size: 12px;
+    }
+    .chartValue2{
+        position: absolute; 
+        top: 90px; 
+        left: 10px;
+       list-style-type: none;
+       font-weight: bold;
+       font-size: 12px;
+    }
+    .chartValue3{
+        position: absolute; 
+        bottom: 15px;
+        left: 10px;
+       list-style-type: none;
+       font-weight: bold;
+       font-size: 12px;
+    }
+    
+    
+} 
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    .lineImg{
+        width: 500px;
+    }
+
+    .chartImg{
+        width: 600px;
+        height: 230px;
+    }
+
+    .Line2Img{
+        position: absolute;
+        width: 450px;
+        bottom: 130px;
+        left: 50px;
+    }
+
+    .vectorImg{
+        position: absolute;
+        width: 430px;
+        bottom: 100px;
+        left: 70px;
+    }
+} 
+
+
+@media (min-width: 900px) and (max-width: 1200px) {
+
+    .lineImg{
+        width: 800px;
+    }
+
+    .chartImg{
+        width: 750px;
+        height: 250px;
+    }
+    .Line2Img{
+        position: absolute;
+        width: 200px;
+        height: 2px;
+        bottom: 130px;
+        left: 60px;
+    }
+} 
+
+
+@media (min-width: 1200px) and (max-width: 1536px) {
+
+    .lineImg{
+        width: 800px;
+    }
+
+    .chartImg{
+        width: 750px;
+        height: 250px;
+    }
+} 

@@ -1,24 +1,48 @@
 "use client"
-import { Box, Button, Container, Typography } from '@mui/material'
+import { Box, Button, Container, Typography,} from '@mui/material'
 import Image from 'next/image'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
+import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Form from '../settingForm/Form';
+import { useEffect, useState } from 'react';
+import TemporaryDrawer from '../drawer/Drawer';
+import * as React from 'react';
+
 
 const UserProfileBar = () => {
   const pathname = usePathname()
-  console.log(pathname);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+
+ 
+  useEffect(() => {
+    // Add event listener
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+  
+handleResize()
+    // Cleanup function to remove event listener
+    return () => {
+handleResize()
+
+    };
+  }, []);
+
+  console.log(windowWidth)
+
   return (
     <Container sx={{backgroundColor: "white",  borderRadius: "8px", borderBottomLeftRadius: "0px" , borderBottomRightRadius: "0px", paddingBottom: "20px", width: "90%", marginLeft: "90px"}}>
         <Container sx={{display: "flex", justifyContent: {xs: 'space-between', sm: "space-evenly", md: "space-evenly", lg: "space-evenly"}}}>
         <Box sx={{width: "150px", margin: "20px 0px", paddingRight: "5px"}}>
           <Link href={"/home"}>
-          <Image src={"/images/arrowRight.png"} width={34} height={34} />
+          <img src={"/images/arrowRight.png"}  style={{width: '34px', height: "34px", display: windowWidth < 600 ? "none" : "block", cursor: 'pointer'}} />
           </Link>
-          
+          <MenuIcon  sx={{width: '34px', height: "34px", display: windowWidth > 0 && windowWidth < 600 ? "block" : "none", cursor: 'pointer'}} />
         </Box>
         <Box sx={{width: "450px", display: "flex", padding: '10px', padding: "20px 0px", flexDirection: {xs: "column", sm: "row", md: "row", lg: "row"}}}>
           <Image src={"/images/singleAvatar.png"} alt='avatar' width={80} height={80}/>
@@ -62,6 +86,7 @@ const UserProfileBar = () => {
         {pathname === "/hrvpage" && <Typography variant='h3' sx={{fontSize:{xs: "24px", sm: "30px", md: "34px", lg: "36px"}, fontWeight: "bold"}}>HRV Monitoring Page</Typography>}
         </Container>
        {pathname === "/settings" &&  <Form />}
+
     </Container>
   )
 }
