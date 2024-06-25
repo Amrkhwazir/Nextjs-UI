@@ -7,7 +7,7 @@ import { Box, Typography } from '@mui/material'
     
     const page = () => {
       return (
-        <Box sx={{width: '100%', height: "100vh", backgroundColor: "whitesmoke", overflowY: "scroll"}}>
+        <Box sx={{width: '100%', height: "100vh", backgroundColor: "whitesmoke", overflowY: "scroll", paddingBottom: "200px"}}>
           <Box sx={{width: '100%', height: "100vh" , backgroundColor: "whitesmoke", borderRadius: "8px"}}>
             <Box sx={{width: "100%", height: "100px", display: "flex", justifyContent:"space-between", padding: "30px"}}>
           
