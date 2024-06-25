@@ -12,7 +12,7 @@ import { Box, Typography } from '@mui/material'
             <Box sx={{width: "100%", height: "100px", display: "flex", justifyContent:"space-between", padding: "30px"}}>
                 
                <Link href={"/"}>
-                <Image src={"/images/mainLogo.png"} alt='logo' width={80} height={70} style={{cursor: "pointer"}} />
+                <Image src={"/images/mainLogo.png"} width={80} height={70} style={{cursor: "pointer"}} />
                </Link>
                 <MoreVert style={{cursor: "pointer", fontSize: "32px", marginTop: '20px'}} />
             </Box>

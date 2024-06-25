@@ -17,7 +17,7 @@ const Chart = () => {
             xl: "row",
         }, alignItems: {xs: "center"}, paddingLeft: {xs: "0px", sm: "20px", md: "20px", lg: "20px"}}}>
             <Box>
-        <Box sx={{width: "230px", height: "200px", backgroundColor: "gainsboro", borderRadius: "30px", paddingTop: "30px", textAlign: "center", marginLeft: "0px", marginRight: "0px"}}>
+        <Box sx={{width: {xs: "230px", sm: "200px", md: "230px", lg: "230px", xl: "430px"}, height: {xs: "200px", sm: "190px", md: "200px", lg: "200px", xl: "280px"}, backgroundColor: "gainsboro", borderRadius: "30px", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: "center"}}>
             <Typography variant='h3'>89 bpm</Typography>
         <Image src={"/images/heart.png"} width={120} height={120} />
         </Box>
@@ -30,7 +30,7 @@ const Chart = () => {
         <Box>
         <h3 style={{marginLeft: "30px", marginTop:"10px"}}>PPG chart</h3>
         <Container sx={{marginTop: "10px", display: "flex", justifyContent: "center", gap: {xs: "10px"}, flexWrap: "wrap",}}>
-        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", maxWidth: "120px", color: "white", height: "30px", fontSize: {xs: "11px", sm: "12px", md: "14px", lg: "14px", xl: "16px"}}}>This Week</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", maxWidth: "240px", color: "white", height: "30px", fontSize: {xs: "11px", sm: "12px", md: "14px", lg: "14px", xl: "16px"}}}>This Week</Button>
         <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", color: "grey", height: "30px", fontSize: {xs: "11px", sm: "12px", md: "14px", lg: "14px", xl: "16px"} }}>This Month</Button>
         <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", height: "30px", color: "grey", fontSize: {xs: "11px", sm: "12px", md: "14px", lg: "14px", xl: "16px"} }}>Today</Button>
         </Container>

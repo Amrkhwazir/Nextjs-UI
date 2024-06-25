@@ -13,14 +13,14 @@ const page = () => {
         sm: "140px",
         md: "180px",
         lg: "200px",
-        xl: "200px"
+        xl: "220px"
       }, minWidth: {
         xs: "100vw",
         sm: "70%",
         md: "70%",
         lg: "70%",
-        xl: "100%"
-      }, minHeight: "100vh", backgroundColor: "whitesmoke" }}>
+        xl: "90%"
+      }, minHeight: "100vh", backgroundColor: "whitesmoke", paddingBottom: "100px" }}>
       <Topbar  />
       <UserProfileBar />
       </Container>

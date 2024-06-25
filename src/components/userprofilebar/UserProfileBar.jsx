@@ -47,7 +47,7 @@ handleResize()
           <Image src={"/images/singleAvatar.png"} alt='avatar' width={80} height={80}/>
           <Box sx={{paddingTop: {xs: "10px", sm: "30px", md: "30px", lg: "30px"}, fontSize: "14px"}}>
           <Typography variant='body' className='userId'>F34</Typography>
-          <Typography variant='h5' className='UserName' sx={{fontSize: {xs: "14px", sm: "14px", md: "20px"}, fontWeight: "bold"}}>ABC DEL</Typography>
+          <Typography variant='h5' className='UserName' sx={{fontSize: {xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "28px"}, fontWeight: "bold"}}>ABC DEL</Typography>
           <span style={{display: "flex"}}>
           <LocationOnIcon sx={{fontSize: {xs: "12px", sm: "15px", md: "18px", lg: "18px", xl: "18px"}}} />
           <Typography variant='bodysm' className='userCity'>USA</Typography>

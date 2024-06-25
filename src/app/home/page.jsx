@@ -5,7 +5,7 @@ import Topbar from "@/components/topbar/Topbar"
 
 const Homepage = () => {
   return (
-    <Box sx={{backgroundColor: "whitesmoke", display: "flex", minHeight: "100vh"}}>
+    <Box sx={{backgroundColor: "whitesmoke", display: "flex", minHeight: "100vh", }}>
       <Sidebar />
       <Container sx={{marginLeft: {
         xs: "0px", 
@@ -19,7 +19,7 @@ const Homepage = () => {
         md: "70%",
         lg: "70%",
         xl: "100%"
-      }, minHeight: "100vh", backgroundColor: "whitesmoke",}}>
+      }, minHeight: "100vh", backgroundColor: "whitesmoke", paddingBottom: "100px"}}>
       <Topbar />
       <Table />
       </Container>

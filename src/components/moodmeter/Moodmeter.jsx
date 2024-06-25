@@ -5,26 +5,27 @@ import styles from "./moodmeter.module.css"
 
 const Moodmeter = () => {
   return (
-   <Container sx={{backgroundColor: "white", padding: "0px 10px", maxWidth: '100%', display: "flex", justifyContent: "space-around", flexDirection: {
+   <Container sx={{backgroundColor: "white", minWidth: '100%', display: "flex", justifyContent: "flex-start", flexDirection: {
     xs: "column",
-    sm: "column",
+    sm: "row",
     md: "row",
     lg: "row",
-   }, alignItems: "center", gap: '30px'}}>
-    <Box sx={{width: "100%", height: "100%", display: "flex", justifyContent: 'center', flexDirection: 'column', alignItems: "center"}}>
-        <Box sx={{width: {xs: '250px', sm: "350px", md: "200px", lg: "230px"}, height: "250px", backgroundColor: "gainsboro", borderRadius: "30px", paddingTop: "30px", textAlign: "center", fontSize: "24px"}}>
+    xl: "row"
+   }, alignItems: "center",}}>
+    <Box sx={{width: "60%", height: "100%", display: "flex", justifyContent: 'center', flexDirection: 'column', alignItems: "center"}}>
+        <Box sx={{width: {xs: '250px', sm: "180px", md: "200px", lg: "230px"}, height: {xs: "250px", sm: "220px", md: "250px", lg: "250px", xl: "250px"}, backgroundColor: "gainsboro", borderRadius: "30px", paddingTop: "30px", textAlign: "center", fontSize: "24px"}}>
         <Typography variant='h3' sx={{marginBottom: "30px"}}>Happy</Typography>   
         <Image src={"/images/happy.png"} width={80} height={80} />   
         </Box>
-        <Box sx={{paddingTop: "12px", textAlign: "center", height: {xs: '50px', sm: "80px", md: "70px", lg: "80px"}}}>
+        <Box sx={{paddingTop: "12px", textAlign: "center", height: {xs: '50px', sm: "100px", md: "90px", lg: "90px"}}}>
         <Typography variant='h5'>Current Mood</Typography>
         </Box>
     </Box>
-    <Box sx={{width: "100%", height: "100%", display: "flex", justifyContent: 'center', flexDirection: 'column', alignItems: "center"}}>
-        <Box sx={{width: {xs: "270px", sm: "450px", md: "450px", lg: "500px"}, backgroundColor: "gainsboro", height: "250px", borderRadius: "30px", padding: '15px'}}>
+    <Box sx={{width: "100%", height: "100%", display: "flex", justifyContent: 'center', flexDirection: 'column', alignItems: "center",}}>
+        <Box sx={{width: {xs: "270px", sm: "320px", md: "450px", lg: "500px"}, backgroundColor: "gainsboro", height: {xs: "250px", sm: "230px", md: "250px", lg: "250px", xl: "250px"}, borderRadius: "30px", padding: '15px'}}>
             {/* 1 */}
-            <Box sx={{display: "flex", paddingTop: "10px", gap: "20px",}}>
-            <Container sx={{textAlign: "center",  background: 'grey', width: '25%', borderRadius: "20px", padding: "8px"}}>
+            <Box sx={{display: "flex", gap: "10px",}}>
+            <Container sx={{background: 'whitesmoke', width: {xs: '25%', sm: '20%', md: '25%', lg: '25%', xl: '25%'}, height: '90px' , borderRadius: "20px", display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
                 <Typography>52</Typography>
@@ -32,7 +33,7 @@ const Moodmeter = () => {
             <Typography>wed</Typography>
             </Container>
             {/* 2 */}
-            <Container sx={{textAlign: "center",  background: 'grey', width: '25%', borderRadius: "20px", padding: "8px"}}>
+            <Container sx={{textAlign: "center",  background: 'whitesmoke', width: {xs: '25%', sm: '20%', md: '25%', lg: '25%', xl: '25%'}, borderRadius: "20px", display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
                 <Typography variant='body1'>52</Typography>
@@ -40,7 +41,7 @@ const Moodmeter = () => {
             <Typography>wed</Typography>
             </Container>
             {/* 3 */}
-            <Container sx={{textAlign: "center", background: 'grey', width: '25%', borderRadius: "20px", padding: "8px"}}>
+            <Container sx={{textAlign: "center", background: 'whitesmoke', width: {xs: '25%', sm: '20%', md: '25%', lg: '25%', xl: '25%'}, borderRadius: "20px", display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
                 <Typography variant='body1'>52</Typography>
@@ -48,7 +49,7 @@ const Moodmeter = () => {
             <Typography>wed</Typography>
             </Container>
             {/* 4 */}
-            <Container sx={{textAlign: "center", background: 'grey', width: '25%', borderRadius: "20px", padding: "8px"}}>
+            <Container sx={{textAlign: "center", background: 'whitesmoke', width: {xs: '25%', sm: '20%', md: '25%', lg: '25%', xl: '25%'}, borderRadius: "20px", display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
                 <Typography variant='body1'>52</Typography>
@@ -57,8 +58,8 @@ const Moodmeter = () => {
             </Container>
             </Box>
 
-            <Box sx={{display: "flex", paddingTop: "15px",  paddingTop: "10px", gap: "20px"}}>
-            <Container sx={{textAlign: "center", background: 'grey', width: '25%', borderRadius: "20px", padding: "8px"}}>
+            <Box sx={{display: "flex", paddingTop: "15px",  paddingTop: "10px", gap: "10px"}}>
+            <Container sx={{textAlign: "center", background: 'whitesmoke', width: {xs: '25%', sm: '20%', md: '25%', lg: '25%', xl: '25%'}, height: '90px', borderRadius: "20px", display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
                 <Typography>52</Typography>
@@ -66,7 +67,7 @@ const Moodmeter = () => {
             <Typography>wed</Typography>
             </Container>
             {/* 2 */}
-            <Container sx={{textAlign: "center", background: 'grey', width: '25%', borderRadius: "20px", padding: "8px"}}>
+            <Container sx={{textAlign: "center", background: 'whitesmoke', width: {xs: '25%', sm: '20%', md: '25%', lg: '25%', xl: '25%'}, borderRadius: "20px", display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
                 <Typography variant='body1'>52</Typography>
@@ -74,7 +75,7 @@ const Moodmeter = () => {
             <Typography>wed</Typography>
             </Container>
             {/* 3 */}
-            <Container sx={{textAlign: "center", background: 'grey', width: '25%', borderRadius: "20px", padding: "8px"}}>
+            <Container sx={{textAlign: "center", background: 'whitesmoke', width: {xs: '25%', sm: '20%', md: '25%', lg: '25%', xl: '25%'}, borderRadius: "20px", display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
                 <Typography variant='body1'>52</Typography>
@@ -82,7 +83,7 @@ const Moodmeter = () => {
             <Typography>wed</Typography>
             </Container>
             {/* 4 */}
-            <Container sx={{textAlign: "center", background: 'grey', width: '25%', borderRadius: "20px", padding: "8px"}}>
+            <Container sx={{textAlign: "center", background: 'whitesmoke', width: {xs: '25%', sm: '20%', md: '25%', lg: '25%', xl: '25%'}, borderRadius: "20px", display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             <Box>
                 <Image src={"/images/sad.png"} width={24} height={24} />
                 <Typography variant='body1'>52</Typography>
