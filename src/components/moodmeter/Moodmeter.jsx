@@ -5,13 +5,13 @@ import styles from "./moodmeter.module.css"
 
 const Moodmeter = () => {
   return (
-   <Container sx={{backgroundColor: "white", padding: "0px 10px", width: '90%', marginLeft: "90px", display: "flex", justifyContent: "space-around", flexDirection: {
+   <Container sx={{backgroundColor: "white", padding: "0px 10px", maxWidth: '100%', display: "flex", justifyContent: "space-around", flexDirection: {
     xs: "column",
     sm: "column",
     md: "row",
     lg: "row",
    }, alignItems: "center", gap: '30px'}}>
-    <Box>
+    <Box sx={{width: "100%", height: "100%", display: "flex", justifyContent: 'center', flexDirection: 'column', alignItems: "center"}}>
         <Box sx={{width: {xs: '250px', sm: "350px", md: "200px", lg: "230px"}, height: "250px", backgroundColor: "gainsboro", borderRadius: "30px", paddingTop: "30px", textAlign: "center", fontSize: "24px"}}>
         <Typography variant='h3' sx={{marginBottom: "30px"}}>Happy</Typography>   
         <Image src={"/images/happy.png"} width={80} height={80} />   
@@ -20,7 +20,7 @@ const Moodmeter = () => {
         <Typography variant='h5'>Current Mood</Typography>
         </Box>
     </Box>
-    <Box sx={{width: "100%"}}>
+    <Box sx={{width: "100%", height: "100%", display: "flex", justifyContent: 'center', flexDirection: 'column', alignItems: "center"}}>
         <Box sx={{width: {xs: "270px", sm: "450px", md: "450px", lg: "500px"}, backgroundColor: "gainsboro", height: "250px", borderRadius: "30px", padding: '15px'}}>
             {/* 1 */}
             <Box sx={{display: "flex", paddingTop: "10px", gap: "20px",}}>

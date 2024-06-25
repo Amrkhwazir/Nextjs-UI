@@ -18,7 +18,9 @@ const Sidebar = () => {
       xl: "block"
     }}} >
       <Box sx={{maxWidth: "200px", height: "200px", textAlign: "center"}}>
+        <Link href={"/"}>
       <Image src={"/images/mainlogo.png"} width={80} height={80} />
+        </Link>
       <Link href={"/home"}>
       <Typography sx={{marginTop: "10px", color:`${pathname === "/home" ? "black" : "grey"}`}}>Home</Typography>
       </Link>

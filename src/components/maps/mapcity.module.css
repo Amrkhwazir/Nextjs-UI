@@ -21,7 +21,7 @@
 @media (min-width: 0px) and (max-width: 600px) {
    
     .map{
-        max-width: 250px;
+        width: 260px;
         height: 250px; 
         border-radius: 12px;
     }

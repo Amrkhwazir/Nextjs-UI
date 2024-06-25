@@ -8,17 +8,17 @@ const page = () => {
   return (
     <Box sx={{display: "flex", backgroundColor: "whitesmoke", minHeight: "100vh"}}>
       <Sidebar />
-      <Container sx={{marginLeft: {
-        xs: "-88px", 
-        sm: "60px",
-        md: "120px",
-        lg: "120px",
-        xl: "120px",
-      }, width: {
-        xs: "110%",
-        sm: "90%",
-        md: "95%",
-        lg: "92%",
+      <Container sx={{marginLeft:{
+        xs: "0px",
+        sm: "140px",
+        md: "180px",
+        lg: "200px",
+        xl: "200px"
+      }, minWidth: {
+        xs: "100vw",
+        sm: "70%",
+        md: "70%",
+        lg: "70%",
         xl: "100%"
       }, minHeight: "100vh", backgroundColor: "whitesmoke" }}>
       <Topbar  />

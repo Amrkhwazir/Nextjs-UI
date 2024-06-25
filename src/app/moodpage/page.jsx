@@ -9,17 +9,17 @@ const page = () => {
   return (
     <Box sx={{backgroundColor: "whitesmoke", display: "flex", minHeight: "100vh", width: "100%",}}>
       <Sidebar />
-      <Container sx={{marginLeft: {
-        xs: "-88px",
-        sm: "65px",
-        md: "120px",
-        lg: "120px",
-        xl: "120px"
-      }, width: {
-        xs: "110%",
-        sm: "90%",
-        md: "95%",
-        lg: "92%",
+      <Container sx={{marginLeft:{
+        xs: "0px",
+        sm: "140px",
+        md: "180px",
+        lg: "200px",
+        xl: "200px"
+      }, minWidth: {
+        xs: "100vw",
+        sm: "70%",
+        md: "70%",
+        lg: "70%",
         xl: "100%"
       }, minHeight: "100vh", backgroundColor: "whitesmoke",}}>
       <Topbar />

@@ -13,7 +13,13 @@ const Homepage = () => {
         md: "200px",
         lg: "200px",
         xl: "200px",
-      }, minWidth: "100%", minHeight: "100vh", backgroundColor: "whitesmoke",}}>
+      }, minWidth: {
+        xs: "100vw",
+        sm: "70%",
+        md: "70%",
+        lg: "70%",
+        xl: "100%"
+      }, minHeight: "100vh", backgroundColor: "whitesmoke",}}>
       <Topbar />
       <Table />
       </Container>
