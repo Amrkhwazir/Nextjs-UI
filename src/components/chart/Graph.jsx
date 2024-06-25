@@ -29,9 +29,9 @@ const Graph = () => {
 <Box sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row', md: "row", lg: "row"}, justifyContent: "center", marginTop: "10px"}}>
         <Typography style={{margin:"10px", width: "300px", fontWeight: "bold", fontSize: "18px"}}>Heart Rate History</Typography>
         <Box sx={{marginTop: "10px", display: "flex", justifyContent: 'center', gap: "10px", flexWrap: "wrap"}}>
-        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", maxWidth: "120px", color: "white", height: "30px", fontSize: {xs: "11px", sm: "14px", md: "14px", lg: "14px", xl: "16px"}}}>This Week</Button>
-        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", color: "grey", height: "30px", fontSize: {xs: "11px", sm: "14px", md: "14px", lg: "14px", xl: "16px"}}}>This Month</Button>
-        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", color: "grey", height: "30px", fontSize: {xs: "11px", sm: "14px", md: "14px", lg: "14px", xl: "16px"}}}>Today</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", maxWidth: "120px", color: "white", height: "30px", fontSize: {xs: "11px", sm: "12px", md: "14px", lg: "14px", xl: "16px"}}}>This Week</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", color: "grey", height: "30px", fontSize: {xs: "11px", sm: "12px", md: "14px", lg: "14px", xl: "16px"}}}>This Month</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", color: "grey", height: "30px", fontSize: {xs: "11px", sm: "12px", md: "14px", lg: "14px", xl: "16px"}}}>Today</Button>
         </Box>
         </Box>
 </Container>

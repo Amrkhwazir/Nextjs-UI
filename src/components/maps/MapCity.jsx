@@ -9,7 +9,7 @@ const MapCity = () => {
 
           <Box sx={{width: "800px", display: "flex", justifyContent: "flex-start", marginBottom: '10px', width: '100%'}}>
             <Box sx={{display: "flex", paddingLeft: "12px",gap: "10px", alignItems: "center"}}>
-            <Image src={"/images/Navigate.png"} width={40} height={40} />
+            <Image src={"/images/navigate.png"} width={40} height={40} />
             <h4>Location History</h4>
             </Box>
         </Box>
