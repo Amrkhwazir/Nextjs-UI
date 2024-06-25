@@ -5,12 +5,12 @@ import styles from "./map.module.css"
 
 const Map = () => {
   return (
-    <Container sx={{marginTop: "20px", backgroundColor: "white", padding: "40px", borderRadius: '12px', width: '90%', marginLeft: "90px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-        <Box sx={{borderRadius: '15px', display: "flex", justifyContent: "center", position: "relative", width: "800px"}}>
+    <Container sx={{marginTop: "20px", backgroundColor: "white", padding: "40px", borderRadius: '12px', minWidth: '100%', display: "flex", flexDirection: "column", alignItems: "center"}}>
+        <Box sx={{borderRadius: '15px', display: "flex", justifyContent: "center", position: "relative", maxWidth: "1500px"}}>
             <img className={styles.mapImg} src={"/images/map2.png"} />
             <img className={styles.vectormap} src="/images/Vector2.png" alt=""  />
-            <img style={{}} className={styles.ellipse} src="/images/Ellipse.png" alt=""  />
-            <Box sx={{position: "absolute", top: {xs: '70px', sm: "80px", md: "80px", lg: "80px"}, marginLeft: "80px"}}>
+            <img className={styles.ellipse} src="/images/Ellipse.png" alt=""  />
+            <Box sx={{position: "absolute", top: {xs: '40px', sm: "80px", md: "80px", lg: "80px"}, marginLeft: "80px", fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "16px"}}}>
                 <p>Current City</p>
                 <h3>City Center</h3>
             </Box>

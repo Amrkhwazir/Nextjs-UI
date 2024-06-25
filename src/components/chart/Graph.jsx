@@ -28,10 +28,10 @@ const Graph = () => {
 </Box>
 <Box sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row', md: "row", lg: "row"}, justifyContent: "center", marginTop: "10px"}}>
         <Typography style={{margin:"10px", width: "300px", fontWeight: "bold", fontSize: "18px"}}>Heart Rate History</Typography>
-        <Box sx={{marginTop: "10px", display: "flex", justifyContent: 'center', gap: "10px"}}>
-        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", width: {xs: "90px", sm: "100px", md: "110px", lg: "120px"}, color: "white", height: "30px", fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "16px"}}}>This Week</Button>
-        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", width: {xs: "100px", sm: "110px", md: "110px", lg: "120px"}, color: "grey", height: "30px", fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "16px"}}}>This Month</Button>
-        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", width: {xs: "90px", sm: "100px", md: "110px", lg: "120px"}, color: "grey", height: "30px", fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "16px"}}}>Today</Button>
+        <Box sx={{marginTop: "10px", display: "flex", justifyContent: 'center', gap: "10px", flexWrap: "wrap"}}>
+        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", maxWidth: "120px", color: "white", height: "30px", fontSize: {xs: "11px", sm: "14px", md: "16px", lg: "16px"}}}>This Week</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", color: "grey", height: "30px", fontSize: {xs: "11px", sm: "14px", md: "16px", lg: "16px"}}}>This Month</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", color: "grey", height: "30px", fontSize: {xs: "11px", sm: "14px", md: "16px", lg: "16px"}}}>Today</Button>
         </Box>
         </Box>
 </Container>

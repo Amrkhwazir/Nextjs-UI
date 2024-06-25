@@ -1,5 +1,5 @@
 .map{
-    max-width: 800px;
+    max-width: 1500px;
     height: 350px; 
     border-radius: 12px;
 }
@@ -21,20 +21,20 @@
 @media (min-width: 0px) and (max-width: 600px) {
    
     .map{
-        max-width: 300px;
-        height: 300px; 
+        max-width: 250px;
+        height: 250px; 
         border-radius: 12px;
     }
     .linevector{
         position: absolute; 
-        width: 200px; 
+        width: 160px; 
         bottom: 5px; 
-        left: 10px
+        left: 5px
     }
     .secondEllipse{
         position: absolute; 
-        width: 50px; 
-        bottom: 80px; 
+        width: 40px; 
+        bottom: 70px; 
         right: 65px
     }
     
@@ -65,9 +65,69 @@
 
 @media (min-width: 900px) and (max-width: 1200px) {
 
+    .map{
+        max-width: 750px;
+        height: 350px; 
+        border-radius: 12px;
+    }
+    
+    .linevector{
+        position: absolute; 
+        width: 400px; 
+        bottom: 5px; 
+        left: 50px
+    }
+    
+    .secondEllipse{
+        position: absolute; 
+        width: 50px; 
+        bottom: 170px; 
+        right: 275px
+    }
+
 } 
 
 
 @media (min-width: 1200px) and (max-width: 1536px) {
+    .map{
+        max-width: 850px;
+        height: 350px; 
+        border-radius: 12px;
+    }
+    
+    .linevector{
+        position: absolute; 
+        width: 400px; 
+        bottom: 5px; 
+        left: 50px
+    }
+    
+    .secondEllipse{
+        position: absolute; 
+        width: 50px; 
+        bottom: 170px; 
+        right: 370px
+    }
+} 
 
+@media (min-width: 1536px) {
+    .map{
+        width: 1900px;
+        height: 350px; 
+        border-radius: 12px;
+    }
+    
+    .linevector{
+        position: absolute; 
+        width: 530px; 
+        bottom: 5px; 
+        left: 160px
+    }
+    
+    .secondEllipse{
+        position: absolute; 
+        width: 50px; 
+        bottom: 200px; 
+        left: 660px
+    }
 } 

@@ -7,7 +7,7 @@ import styles from "./chart.module.css"
 
 const Chart = () => {
   return (
-    <Box sx={{backgroundColor: "white", width: "90%", paddingBottom: "30px", marginLeft: "90px"}}>
+    <Box sx={{backgroundColor: "white", maxWidth: "100%", paddingBottom: "30px"}}>
         {/* heart rate and chart */}
         <Box sx={{ display: "flex", justifyContent: "space-around", flexDirection: {
             xs: "column",
@@ -30,9 +30,9 @@ const Chart = () => {
         <Box>
         <h3 style={{marginLeft: "30px", marginTop:"10px"}}>PPG chart</h3>
         <Container sx={{marginTop: "10px", display: "flex", justifyContent: "center", gap: {xs: "10px"}, flexWrap: "wrap",}}>
-        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", width: {xs: '100px', sm: "110px", md: "110px", lg: "120px", xl: '130px'}, color: "white", height: "30px", fontSize: {xs: "12px", sm: "12px", md: "16px", lg: "16px", xl: "16px"}}}>This Week</Button>
-        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", width: {xs: '100px', sm: "110px", md: "110px", lg: "120px", xl: '130px'}, color: "grey", height: "30px", fontSize: "12px", fontSize: {xs: "12px", sm: "12px", md: "16px", lg: "16px", xl: "16px"} }}>This Month</Button>
-        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", width: {xs: '90px', sm: "100px", md: "110px", lg: "120px", xl: '130px'}, height: "30px", color: "grey", fontSize: "12px", fontSize: {xs: "12px", sm: "12px", md: "16px", lg: "16px", xl: "16px"} }}>Today</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "#42A9F4", maxWidth: "120px", color: "white", height: "30px", fontSize: {xs: "11px", sm: "12px", md: "16px", lg: "16px", xl: "16px"}}}>This Week</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", color: "grey", height: "30px", fontSize: "11px", fontSize: {xs: "12px", sm: "12px", md: "16px", lg: "16px", xl: "16px"} }}>This Month</Button>
+        <Button sx={{borderRadius: "15px", backgroundColor: "whitesmoke", maxWidth: "120px", height: "30px", color: "grey", fontSize: "11px", fontSize: {xs: "12px", sm: "12px", md: "16px", lg: "16px", xl: "16px"} }}>Today</Button>
         </Container>
         </Box>
         </Box>

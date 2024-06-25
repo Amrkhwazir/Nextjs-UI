@@ -1,10 +1,14 @@
+"use client"
 import { Box, Container, Typography } from "@mui/material"
 import Image from "next/image"
-import styles from "./sidebar.module.css"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 
 const Sidebar = () => {
+
+  const pathname = usePathname();
+
   return (
     <Container sx={{width: {xs: "0px", sm: '150px', md: "180px", lg: "200px"}, backgroundColor: "white", paddingTop: "30px", position: "fixed", height: "100vh", display : {
       xs: "none",
@@ -16,10 +20,10 @@ const Sidebar = () => {
       <Box sx={{maxWidth: "200px", height: "200px", textAlign: "center"}}>
       <Image src={"/images/mainlogo.png"} width={80} height={80} />
       <Link href={"/home"}>
-      <Typography className={styles.text}>Home</Typography>
+      <Typography sx={{marginTop: "10px", color:`${pathname === "/home" ? "black" : "grey"}`}}>Home</Typography>
       </Link>
       <Link href="/settings">
-      <Typography className={styles.text}>Settings</Typography>
+      <Typography sx={{marginTop: "10px", color:`${pathname === "/settings" ? "black" : "grey"}`}}>Settings</Typography>
       </Link>
       </Box>
     </Container>

@@ -11,18 +11,12 @@ const page = () => {
     <Box sx={{minHeight: "100vh", width: "100%", display: "flex", backgroundColor: "whitesmoke"}}>
       <Sidebar />
       <Container sx={{marginLeft: {
-        xs: "-88px",
+        xs: "0px",
         sm: "65px",
         md: "120px",
         lg: "120px",
         xl: "120px"
-      }, width: {
-        xs: "110%",
-        sm: "90%",
-        md: "95%",
-        lg: "92%",
-        xl: "100%"
-      }, minHeight: "100vh", backgroundColor: "whitesmoke"}}>
+      },minWidth: '100vw', minHeight: "100vh", backgroundColor: "whitesmoke", border: "1px solid red"}}>
       <Topbar />
       <UserProfileBar />
       <Chart />
